@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{D80C800C-FEF2-4CE4-9655-0D53CC6F5703}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../EmptyClass.cs">
+    <Files>
+      <File FileName="Encapsulation/Program.cs" Line="2" Column="34" />
+      <File FileName="Encapsulation/Cleaner.cs" Line="6" Column="1" />
+      <File FileName="Encapsulation/Hotel.cs" Line="24" Column="50" />
+      <File FileName="Encapsulation/Receptionist.cs" Line="12" Column="1" />
+      <File FileName="Encapsulation/Room.cs" Line="5" Column="30" />
+      <File FileName="Encapsulation/Customer.cs" Line="1" Column="14" />
+      <File FileName="Encapsulation/Manager.cs" Line="6" Column="1" />
+      <File FileName="../../../../EmptyClass.cs" Line="6" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Encapsulation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
