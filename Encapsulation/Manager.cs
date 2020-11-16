@@ -16,18 +16,18 @@ namespace Encapsulation
             this.name = name;
         }
 
-        public string takeFeedback(Manager manager, Customer customer)
+        public string takeFeedback(Customer customer)
         {
             if (customer.feedback > 0)
-                Console.WriteLine(manager.name + " says: " + customer.name + " was happy with their stay!");
+                Console.WriteLine(this.name + " says: " + customer.name + " was happy with their stay!");
             else if (customer.feedback < 0)
-                Console.WriteLine(manager.name + " says: " + customer.name + " was unhappy with their stay!");
+                Console.WriteLine(this.name + " says: " + customer.name + " was unhappy with their stay!");
             else
-                Console.WriteLine(manager.name + " says: " + customer.name + " found their stay ok.");
+                Console.WriteLine(this.name + " says: " + customer.name + " found their stay ok.");
 
             return feedback;
-            
         }
+
         public void setFeedback(string review)
         {
             feedback = review;

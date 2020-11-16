@@ -14,6 +14,7 @@ namespace Encapsulation
         {
             this.rooms = rooms;
         }
+
         public List<Room> checkRooms()
         {
             return this.rooms;
@@ -21,30 +22,27 @@ namespace Encapsulation
 
         public void addOccupant(Customer customer, Room room)
         {
-
-            if (room.occupants.Count < room.size)
-            {
-                room.occupants.Add(occupantIn);
-                occupantIn.feedback++;
-            }
-            else
-            {
-                occupantIn.feedback--;
-                return;
-            }
-            if (room.clean == true)
-                occupantIn.feedback++;
-            else
-                occupantIn.feedback--;
-            room.clean = false;
+            room.AddOccupant(customer);
         }
+
         public void removeOccupant(Customer customer)
         {
-
+            foreach (var r in rooms)
+            {
+                if (r.HasOccupant(customer))
+                {
+                    r.RemoveOccupant(customer);
+                }
+            }
         }
+
         public void cleanRooms(Cleaner cleaner)
         {
-
+            foreach (var r in rooms)
+            {
+                r.Clean();
+                Console.WriteLine($"{cleaner.GetName()} cleaned room {r.GetNumber()}");
+            }
         }
     }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2o4JB+BvJjFb1qRNxXkGOQ/SrkK9FjbABK0qZizhHPKvPbr6MxzaD8awV+PTXaQ7WKtQolrKxrxp2udy3emAdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LeeThomas\\source\\repos\\EncapsulationINNIT\\Encapsulation\\Encapsulation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LeeThomas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\LeeThomas\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\LeeThomas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\LeeThomas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

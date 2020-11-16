@@ -17,8 +17,11 @@ namespace Encapsulation
 
         public void checkIn(Hotel hotel, Customer customer)
         {
-            //addOccupant(hotel[customer.roomBooking - 1], customer);
-            hotel.addOccupant(customer);
+            // Longer way to do the one-liner below:
+            //List<Room> rooms = hotel.checkRooms();
+            //hotel.addOccupant(customer, rooms[customer.roomBooking - 1]);
+
+            hotel.addOccupant(customer, hotel.checkRooms()[customer.roomBooking - 1]);
             Console.WriteLine(name + " checked in " + customer.name);
         }
 
@@ -26,12 +29,7 @@ namespace Encapsulation
         {
             hotel.removeOccupant(customer);
             Console.WriteLine(name + " checked out " + customer.name);
-
-            //removeOccupant(hotel[customer.roomBooking - 1], customer);
-
-            //manager.review(customer, manager, hotel);
-
-            manager.setFeedback();
+            manager.takeFeedback(customer);
         }
     }
 }

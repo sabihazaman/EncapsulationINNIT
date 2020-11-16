@@ -8,11 +8,11 @@ namespace Encapsulation
 {
     public class Cleaner
     {
-        private string name;
+        private string Name;
 
         public Cleaner(string name)
         {
-            this.name = name;
+            Name = name;
         }
 
         public void cleanRooms(Hotel hotel, Cleaner cleaner)
@@ -20,5 +20,9 @@ namespace Encapsulation
             hotel.cleanRooms(cleaner);
         }
 
+        public string GetName()
+        {
+            return Name;
+        }
     }
 }

@@ -8,7 +8,6 @@ namespace Encapsulation
 {
     public class MC
     { 
-
         public MC()
         {
             List<Room> rooms = new List<Room>();
@@ -49,77 +48,10 @@ namespace Encapsulation
             receptionist.checkOut(hotel, customer6, manager);
             Console.ReadLine();
         }
+
         public static void Main(string[] args)
         {
             new MC();
         }
     }
 }
-
-/*
-       static void addOccupant(Room room, Customer occupantIn)
-       {
-           if (room.occupants.Count < room.size)
-           {
-               room.occupants.Add(occupantIn);
-               occupantIn.feedback++;
-           }
-           else
-           {
-               occupantIn.feedback--;
-               return;
-           }
-           if (room.clean == true)
-               occupantIn.feedback++;
-           else
-               occupantIn.feedback--;
-           room.clean = false;
-       }
-
-       static void removeOccupant(Room room, Customer occupantOut)
-       {
-           int index = -1;
-           for (int i = 0; i < room.occupants.Count; i++)
-           {
-               if (string.Equals(room.occupants[i], occupantOut))
-                   index = i;
-           }
-           if (index != -1)
-               room.occupants.RemoveAt(index);
-       }
-
-       static void takeFeedback(Manager manager, Customer customer)
-       {
-           if (customer.feedback > 0)
-               Console.WriteLine(manager.name + " says: " + customer.name + " was happy with their stay!");
-           else if (customer.feedback < 0)
-               Console.WriteLine(manager.name + " says: " + customer.name + " was unhappy with their stay!");
-           else
-               Console.WriteLine(manager.name + " says: " + customer.name + " found their stay ok.");
-       }
-
-       static void cleanRooms(Cleaner cleaner, List<Room> hotel)
-       {
-           for (int i = 0; i < hotel.Count; i++)
-           {
-               if (hotel[i].occupants.Count == 0)
-               {
-                   hotel[i].clean = true;
-                   Console.WriteLine(cleaner.name + " cleaned Room " + hotel[i].number);
-               }
-           }
-       }
-
-       static void checkIn(Receptionist receptionist, List<Room> hotel, Customer customer)
-       {
-           addOccupant(hotel[customer.roomBooking - 1], customer);
-           Console.WriteLine(receptionist.name + " checked in " + customer.name);
-       }
-
-       static void checkOut(Receptionist receptionist, List<Room> hotel, Customer customer, Manager manager)
-       {
-           removeOccupant(hotel[customer.roomBooking - 1], customer);
-           Console.WriteLine(receptionist.name + " checked out " + customer.name);
-           takeFeedback(manager, customer);
-       }
-       */

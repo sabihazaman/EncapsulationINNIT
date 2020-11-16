@@ -8,21 +8,66 @@ namespace Encapsulation
 {
     public class Room
     {
-        private int number;
+        private int Number;
         private int size;
         private List<Customer> occupants;
         private bool clean;
 
+        public int GetNumber()
+        {
+            return Number;
+        }
+
         public Room(int number, int size, bool clean)
         {
-            this.number = number;
+            Number = number;
             this.size = size;
             this.occupants = new List<Customer>();
             this.clean = clean;
-
-            //return;
-
         }
         
+        public void AddOccupant(Customer cust)
+        {
+            if (occupants.Count < size)
+            {
+                occupants.Add(cust);
+                cust.feedback++;
+            }
+            else
+            {
+                cust.feedback--;
+                return;
+            }
+
+            if (this.clean)
+                cust.feedback++;
+            else
+                cust.feedback--;
+
+            this.clean = false;
+        }
+
+        public void RemoveOccupant(Customer cust)
+        {
+            occupants.RemoveAll(c => c.name == cust.name);
+        }
+
+        public bool HasOccupant(Customer cust)
+        {
+            foreach (var o in occupants)
+            {
+                if (o.name == cust.name)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public void Clean()
+        {
+            this.clean = true;
+        }
     }
 }
