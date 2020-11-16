@@ -1,0 +1,11 @@
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation.deps.json
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation.runtimeconfig.json
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation.runtimeconfig.dev.json
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation.dll
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/bin/Debug/netcoreapp3.0/Encapsulation.pdb
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/obj/Debug/netcoreapp3.0/Encapsulation.csprojAssemblyReference.cache
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/obj/Debug/netcoreapp3.0/Encapsulation.AssemblyInfoInputs.cache
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/obj/Debug/netcoreapp3.0/Encapsulation.AssemblyInfo.cs
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/obj/Debug/netcoreapp3.0/Encapsulation.dll
+/Users/sabihazaman/Projects/Encapsulation/Encapsulation/obj/Debug/netcoreapp3.0/Encapsulation.pdb
